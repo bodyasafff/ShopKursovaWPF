@@ -64,6 +64,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\Delivery.cs" />
+    <Compile Include="Models\Sale.cs" />
+    <Compile Include="Models\Storege.cs" />
     <Compile Include="Models\Worker.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Supplier.cs" />
