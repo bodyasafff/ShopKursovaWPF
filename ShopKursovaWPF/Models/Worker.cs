@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShopKursovaWPF.Models
 {
-    public class Client
+    public class Worker
     {
         public int Id { get; set; } 
         public string Name { get; set; }
