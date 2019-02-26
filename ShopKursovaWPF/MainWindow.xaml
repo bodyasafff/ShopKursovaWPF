@@ -5,31 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ShopKursovaWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="" Height="450" Width="800" BorderBrush="DarkGray">
+    <Grid Background="Black" >
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-        <Button Content="Add Product" Grid.Column="0" BorderBrush="Black" Background="DarkGray"></Button>
-        <Button Content="Add Arrival" Grid.Column="1" BorderBrush="Black" Background="DarkGray"></Button>
-         <Button Content="Add Client" Grid.Column="2" BorderBrush="Black" Background="DarkGray"></Button>
-         <Button Content="Show all products" Grid.Column="3" BorderBrush="Black" Background="DarkGray"></Button>
-         <Button Content="Show all client" Grid.Column="4" BorderBrush="Black" Background="DarkGray"></Button>
-            
-        </Grid>
-        <DataGrid Grid.Row="1" Grid.RowSpan="3">
-            
-        </DataGrid>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="1" Grid.Row="1" Content="Login" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+        <TextBox Grid.Column="1" Grid.Row="1" Background="Black" VerticalAlignment="Bottom" Foreground="White"></TextBox>
+        <Label Content="Hello" Grid.Column="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"></Label>
+        <Label Content="Password" Foreground="White" Grid.Column="1" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center"></Label>
+        <PasswordBox Grid.Row="2" Grid.Column="1" Background="Black" VerticalAlignment="Center" Foreground="White"/>
+        <Button Grid.Column="1" Grid.Row="3" Background="Black" VerticalAlignment="Top" HorizontalAlignment="Center" Content="OK" Foreground="White" BorderBrush="Black"></Button>
     </Grid>
 </Window>
