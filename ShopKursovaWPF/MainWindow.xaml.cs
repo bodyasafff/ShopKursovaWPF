@@ -29,5 +29,15 @@ namespace ShopKursovaWPF
                 shopKurs.SaveChanges();
             }
         }
+
+        private void ClickSignIn(object sender, RoutedEventArgs e)
+        {
+            //if(txt_Login.Text == "admin" && txt_Password.Password == "admin")
+            //{
+                WManager wManager = new WManager();
+                wManager.Show();
+                this.Close();
+           //}
+        }
     }
 }

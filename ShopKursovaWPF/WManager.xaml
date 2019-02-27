@@ -6,7 +6,28 @@
         xmlns:local="clr-namespace:ShopKursovaWPF"
         mc:Ignorable="d"
         Title="WManager" Height="450" Width="800">
-    <Grid>
-       
+    <Grid Background="#FF111010">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Content="new Product" Background="Black" Foreground="White" BorderBrush="Black" Click="Click_Add_Product" ></Button>
+            <Button Content="new Delivery" Grid.Column="1" Background="Black" Foreground="White" BorderBrush="Black" Click="Click_Add_Delivery"></Button>
+            <Button Content="new Sale" Grid.Column="2" Background="Black" Foreground="White" BorderBrush="Black" Click="Click_Add_Sale"></Button>
+            <Button Content="new Supplier" Grid.Column="3" Background="Black" Foreground="White" BorderBrush="Black" Click="Click_Add_Supplire"></Button>
+        </Grid>
     </Grid>
 </Window>

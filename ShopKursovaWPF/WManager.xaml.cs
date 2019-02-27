@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShopKursovaWPF;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,27 @@ namespace ShopKursovaWPF
         public WManager()
         {
             InitializeComponent();
+        }
+
+        private void Click_Add_Product(object sender, RoutedEventArgs e)
+        {
+            WAddProduct wAddProduct = new WAddProduct();
+            wAddProduct.Show();
+        }
+
+        private void Click_Add_Delivery(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Click_Add_Sale(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Click_Add_Supplire(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

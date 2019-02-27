@@ -70,6 +70,9 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Supplier.cs" />
     <Compile Include="ShopKurs.cs" />
+    <Compile Include="WAddProduct.xaml.cs">
+      <DependentUpon>WAddProduct.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WManager.xaml.cs">
       <DependentUpon>WManager.xaml</DependentUpon>
     </Compile>
@@ -85,6 +88,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="WAddProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WManager.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -117,5 +124,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
