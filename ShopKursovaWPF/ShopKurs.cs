@@ -16,7 +16,6 @@ namespace ShopKursovaWPF
         //public virtual DbSet<Sale> Sales { get; set; }
         //public virtual DbSet<Storege> Storeges { get; set;}
         //public virtual DbSet<Supplier> Suppliers { get; set; }
-        //public virtual DbSet<Worker> Workers { get; set; }
     }
 
 }
