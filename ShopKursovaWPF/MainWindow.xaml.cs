@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShopKursovaWPF.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,10 @@ namespace ShopKursovaWPF
         public MainWindow()
         {
             InitializeComponent();
+            using (ShopKurs shopKurs = new ShopKurs())
+            {
+                shopKurs.SaveChanges();
+            }
         }
     }
 }
