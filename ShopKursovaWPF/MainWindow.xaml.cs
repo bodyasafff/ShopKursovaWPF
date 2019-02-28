@@ -23,5 +23,15 @@ namespace ShopKursovaWPF
         {
             InitializeComponent();
         }
+
+        private void Click_SignIn(object sender, RoutedEventArgs e)
+        {
+            if (txt_Login.Text == "Bomgara" && txt_Password.Password == "123")
+            {
+                WManager wManager = new WManager();
+                wManager.Show();
+                this.Close();
+            }
+        }
     }
 }

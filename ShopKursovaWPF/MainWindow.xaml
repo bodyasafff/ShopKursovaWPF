@@ -20,9 +20,9 @@
         </Grid.ColumnDefinitions>
         <Label Grid.Column="1" Content="Hello ;)" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
         <Label Grid.Column="1" Grid.Row="1" Content="Login" FontSize="20" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top"></Label>
-        <TextBox Grid.Column="1" Grid.Row="1" Background="Black" VerticalAlignment="Center" Foreground="White"></TextBox>
+        <TextBox x:Name="txt_Login" Grid.Column="1" Grid.Row="1" Background="Black" VerticalAlignment="Center" Foreground="White"></TextBox>
         <Label Grid.Column="1" Grid.Row="2" Content="Password" Foreground="White" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center"></Label>
-        <PasswordBox Grid.Column="1" Grid.Row="2" Background="Black" Foreground="White" VerticalAlignment="Center"></PasswordBox>
+        <PasswordBox x:Name="txt_Password" Grid.Column="1" Grid.Row="2" Background="Black" Foreground="White" VerticalAlignment="Center"></PasswordBox>
         <Grid Grid.Column="1" Grid.Row="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
@@ -32,7 +32,7 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            <Button Background="Black" Content="Sign In" Foreground="White" BorderBrush="Black"></Button>
+            <Button Background="Black" Content="Sign In" Foreground="White" BorderBrush="Black" Click="Click_SignIn"></Button>
             <Button Grid.Column="2" Content="Log In" Background="Black" Foreground="White" BorderBrush="Black"></Button>
         </Grid>
         </Grid>
