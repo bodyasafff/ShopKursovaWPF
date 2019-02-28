@@ -12,26 +12,19 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        
+        <Label Content="Name" Foreground="White" FontSize="20"></Label>
+        <TextBox x:Name="txt_ProductName"  Background="Black" Foreground="White" VerticalAlignment="Center"></TextBox>
+        <Label Content="Quantity" Grid.Row="1" Foreground="White" FontSize="20"></Label>
+        <TextBox x:Name="txt_ProductQuantity" Grid.Row="1" Foreground="White" Background="Black" VerticalAlignment="Center"></TextBox>
+        <Label Content="Price" Grid.Row="2" Foreground="White" FontSize="20"></Label>
+        <TextBox x:Name="txt_ProductPrice" Grid.Row="2" Foreground="White" Background="Black" VerticalAlignment="Center"></TextBox>
+        <!--<Label Content="" Grid.Row="3" Foreground="White" FontSize="20"></Label>
+        <ComboBox Grid.Row="3" VerticalAlignment="Center" Background="Black"/>-->
+        <Button Grid.Row="3" Grid.Column="1" Background="#FF111010" HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="Add" FontSize="30" BorderBrush="#FF111010" Foreground="White" Click="Click_addProduct"></Button>
     </Grid>
 </Window>
