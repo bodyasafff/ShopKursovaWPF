@@ -33,7 +33,8 @@ namespace ShopKursovaWPF
 
         private void Click_Add_Delivery(object sender, RoutedEventArgs e)
         {
-
+            WAddDelivery wAddDelivery = new WAddDelivery();
+            wAddDelivery.Show();
         }
 
         private void Click_Add_Sale(object sender, RoutedEventArgs e)

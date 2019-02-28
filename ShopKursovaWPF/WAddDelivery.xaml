@@ -1,0 +1,28 @@
+﻿<Window x:Class="ShopKursovaWPF.WAddDelivery"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShopKursovaWPF"
+        mc:Ignorable="d"
+        Title="WAddDelivery" Height="450" Width="800">
+    <Grid Background="#FF111010">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Content="Quantity" Grid.Row="00" Foreground="White" FontSize="20"></Label>
+        <TextBox x:Name="txt_DeliveryQuantity" Grid.Row="0" Foreground="White" Background="Black" VerticalAlignment="Center"></TextBox>
+        <Label Content="Price" Grid.Row="1" Foreground="White" FontSize="20"></Label>
+        <TextBox x:Name="txt_DeliveryPrice" Grid.Row="1" Foreground="White" Background="Black" VerticalAlignment="Center"></TextBox>
+        <Label Grid.Row="2" Content="Peoducts" FontSize="20" Foreground="White"></Label>
+
+        <Button Grid.Row="3" Grid.ColumnSpan="2" Grid.Column="0" Background="#FF111010" HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="Add" FontSize="20" BorderBrush="#FF111010" Foreground="White"></Button>
+    </Grid>
+</Window>
