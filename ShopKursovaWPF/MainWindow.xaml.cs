@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShopKursovaWPF.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,21 @@ namespace ShopKursovaWPF
         public MainWindow()
         {
             InitializeComponent();
+            using (ShopKurs shopKurs = new ShopKurs())
+            {
+                txt_Login.Text = shopKurs.Products.Count().ToString();
+                shopKurs.SaveChanges();
+            }
+        }
+
+        private void ClickSignIn(object sender, RoutedEventArgs e)
+        {
+            if (txt_Login.Text == "admin" && txt_Password.Password == "admin")
+            {
+                WManager wManager = new WManager();
+                wManager.Show();
+                this.Close();
+            }
         }
     }
 }
