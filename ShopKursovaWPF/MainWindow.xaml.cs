@@ -26,7 +26,7 @@ namespace ShopKursovaWPF
 
         private void Click_SignIn(object sender, RoutedEventArgs e)
         {
-            if (txt_Login.Text == "Bomgara" && txt_Password.Password == "123")
+            if (txt_Login.Text == "admin" && txt_Password.Password == "admin")
             {
                 WManager wManager = new WManager();
                 wManager.Show();

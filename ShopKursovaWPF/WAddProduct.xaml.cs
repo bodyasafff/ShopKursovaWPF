@@ -38,6 +38,7 @@ namespace ShopKursovaWPF
             using (ShopKurs shopKurs = new ShopKurs())
             {
                 shopKurs.Products.Add(product);
+              
             }
             this.Close();
         }

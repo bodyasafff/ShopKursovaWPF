@@ -25,6 +25,6 @@
         <TextBox x:Name="txt_ProductPrice" Grid.Row="2" Foreground="White" Background="Black" VerticalAlignment="Center"></TextBox>
         <!--<Label Content="" Grid.Row="3" Foreground="White" FontSize="20"></Label>
         <ComboBox Grid.Row="3" VerticalAlignment="Center" Background="Black"/>-->
-        <Button Grid.Row="3" Grid.Column="1" Background="#FF111010" HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="Add" FontSize="30" BorderBrush="#FF111010" Foreground="White" Click="Click_addProduct"></Button>
+        <Button Grid.Row="3" Grid.ColumnSpan="2" Grid.Column="0" Background="#FF111010" HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="Add" FontSize="30" BorderBrush="#FF111010" Foreground="White" Click="Click_addProduct"></Button>
     </Grid>
 </Window>
